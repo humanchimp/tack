@@ -1,0 +1,19 @@
+{
+  "name": "@topl/tack",
+  "version": "1.0.0",
+  "main": "dist/cjs/tack.js",
+  "module": "dist/esm/tack.js",
+  "typings": "dist/tack.d.ts",
+  "description": "a place to put commonly needed functions",
+  "author": "Lil Thorny <hi@lilthorny.party>",
+  "license": "MIT",
+  "devDependencies": {
+    "@wessberg/rollup-plugin-ts": "^1.1.52",
+    "rollup-plugin-multi-entry": "^2.1.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "prepublish": "npm run build && mv dist/cjs/tack.d.ts* dist && rm dist/esm/tack.d.ts*"
+  }
+}
