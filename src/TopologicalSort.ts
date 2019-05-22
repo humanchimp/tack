@@ -1,17 +1,15 @@
 import { assert } from "./assert";
 
-interface Node {}
-
-interface Edge {
-  source: Node;
-  target: Node;
+interface Edge<T> {
+  source: T;
+  target: T;
 }
 
-export class TopologicalSort {
-  nodes: Set<Node> = new Set<Node>();
-  private edges: Set<Edge> = new Set<Edge>();
+export class TopologicalSort<T> {
+  nodes: Set<T> = new Set<T>();
+  private edges: Set<Edge<T>> = new Set<Edge<T>>();
 
-  addEdge(source: Node, target: Node) {
+  addEdge(source: T, target: T) {
     assert(this.nodes.has(source), "Source node not found in graph");
     assert(this.nodes.has(target), "Target node not found in graph");
 
@@ -21,10 +19,10 @@ export class TopologicalSort {
     });
   }
 
-  sort(): Node[] {
+  sort(): T[] {
     const list = [];
-    const permanent: Set<Node> = new Set<Node>();
-    const temporary: Set<Node> = new Set<Node>();
+    const permanent: Set<T> = new Set<T>();
+    const temporary: Set<T> = new Set<T>();
 
     while (permanent.size < this.nodes.size) {
       for (const node of this.nodes) {
@@ -36,7 +34,7 @@ export class TopologicalSort {
     return list;
   }
 
-  visit(node: Node, list: Node[], permanent: Set<Node>, temporary: Set<Node>): void {
+  visit(node: T, list: T[], permanent: Set<T>, temporary: Set<T>): void {
     if (permanent.has(node)) {
       return;
     }

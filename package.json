@@ -1,6 +1,6 @@
 {
   "name": "@topl/tack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/cjs/tack.js",
   "module": "dist/esm/tack.js",
   "typings": "dist/tack.d.ts",
