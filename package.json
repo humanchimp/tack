@@ -1,10 +1,10 @@
 {
   "name": "@topl/tack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/cjs/tack.js",
   "module": "dist/esm/tack.js",
   "typings": "dist/tack.d.ts",
-  "description": "a place to put commonly needed functions",
+  "description": "a place to tack things",
   "author": "Lil Thorny <hi@lilthorny.party>",
   "license": "MIT",
   "devDependencies": {
