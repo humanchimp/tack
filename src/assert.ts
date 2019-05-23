@@ -1,7 +1,7 @@
 class AssertionError extends Error {}
 
-export function assert(condition: any, message: string) {
+export function assert(condition: any, message: string = 'Assertion failed!') {
   if (!condition) {
-    throw new AssertionError(message || 'Assertion failed!');
+    throw new AssertionError(message);
   }
 }
