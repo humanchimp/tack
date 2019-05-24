@@ -4,35 +4,49 @@ tack is just a place to stick things that are needed cross-project. It is not me
 
 ## api
 
-### `assert(condition: any, message?: string): void;`
+### assert
+
+```typescript
+declare function assert(condition: any, message?: string): void;
+```
 
 Throw an assertion error with the given message if the condition is not true.
 
-### `findLast<T>(predicate: (it: T, index: number) => boolean, array: any[]): T;`
+### findLast
+
+```typescript
+declare function findLast<T>(predicate: (it: T, index: number) => boolean, array: any[]): T;
+```
 
 Find the last item of an array that matches the predicate.
 
-### `head<T>(it: Iterable<T>): T;`
+### head
+
+```typescript
+declare function head<T>(it: Iterable<T>): T;
+```
 
 Return the first item of an iterable.
 
-### `partition<T>(predicate: (item: T, index: number) => boolean, array: T[]): [T[], T[]];`
+### partition
+
+```typescript
+declare function partition<T>(predicate: (item: T, index: number) => boolean, array: T[]): [T[], T[]];
+```
 
 Split an array into two arrays, ones that respectively contain all the items matching and not matching the predicate.
 
-### `class TopologicalSort<T>`
+### TopologicalSort 
 
-#### `nodes: Set<T>;`
-
-Just a set of nodes. Manage this yourself using its `Set` api.
-
-#### `addEdge(source: T, target: T): void;`
-
-Add an edge from the source to the target.
-
-#### `sort(): T[];`
-
-Get a sorted list of nodes.
+```typescript
+declare class TopologicalSort<T> {
+    nodes: Set<T>;
+    private edges;
+    addEdge(source: T, target: T): void;
+    sort(): T[];
+    visit(node: T, list: T[], permanent: Set<T>, temporary: Set<T>): void;
+}
+```
 
 ## license
 
