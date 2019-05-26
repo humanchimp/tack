@@ -48,6 +48,14 @@ declare class TopologicalSort<T> {
 }
 ```
 
+### getAt
+
+Get the object at the path
+
+```typescript
+export declare function getAt<T, F = T>(path: string[], target: T): F;
+```
+
 ## license
 
 See [LICENSE](LICENSE)
