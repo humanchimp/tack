@@ -15,6 +15,6 @@
   },
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "prepublish": "npm run build && mv dist/cjs/tack.d.ts* dist && rm dist/esm/tack.d.ts*"
+    "prepublishOnly": "npm run build && mv dist/cjs/tack.d.ts* dist && rm dist/esm/tack.d.ts*"
   }
 }
