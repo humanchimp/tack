@@ -8,7 +8,7 @@
   "author": "Lil Thorny <hi@lilthorny.party>",
   "license": "MIT",
   "devDependencies": {
-    "@wessberg/rollup-plugin-ts": "^1.1.52",
+    "@wessberg/rollup-plugin-ts": "^1.1.54",
     "rollup": "^1.12.3",
     "rollup-plugin-multi-entry": "^2.1.0",
     "typescript": "^3.4.5"
