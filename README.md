@@ -1,6 +1,6 @@
 # 📌 tack
 
-tack is just a place to stick things that are needed cross-project. It is not meant to be a big/professional library like lodash. Instead, it contains useful utilities and algorithms we commonly need with boilerplate so we don't need to waste a bunch of time configuring rollup for each little module. Instead, the modules all house together in this package, and thanks to treeshaking, we can still load only what we need.
+tack is just a place to stick things that are needed cross-project.
 
 ## api
 
