@@ -717,9 +717,9 @@
     ua-parser-js "^0.7.20"
 
 "@wessberg/rollup-plugin-ts@^1.1.54":
-  version "1.1.58"
-  resolved "https://registry.yarnpkg.com/@wessberg/rollup-plugin-ts/-/rollup-plugin-ts-1.1.58.tgz#650f3ef754543c675fb7d2ce3d24ab374fe0282d"
-  integrity sha512-5OHEJX5t5aFD2cj7wg/iH2n+3aslHfEXQmNr3bJL8e+f6DY1lMGKN+6Yrn1fP11oLSbZAzOpHf9ynU2hzUp0/w==
+  version "1.1.59"
+  resolved "https://registry.yarnpkg.com/@wessberg/rollup-plugin-ts/-/rollup-plugin-ts-1.1.59.tgz#d6060ecbefacbf5b4ae2958ab33059edf875ad2a"
+  integrity sha512-U4OyZ9BIjI2D4boxHTJaVgXj9SJ8k/+9EH5XvThnNMM9vP5JxaJRad36BpC9vDdjJpb9Y5kzBfN6hgtwhlSvaA==
   dependencies:
     "@babel/core" "^7.4.5"
     "@babel/plugin-proposal-async-generator-functions" "^7.2.0"
@@ -741,11 +741,9 @@
     magic-string "^0.25.2"
     mkdirp "^0.5.1"
     resolve "^1.11.1"
-    rollup "^1.15.6"
     rollup-pluginutils "^2.8.1"
     slash "^3.0.0"
     tslib "^1.10.0"
-    typescript "^3.5.2"
 
 "@wessberg/stringutil@^1.0.18":
   version "1.0.18"
@@ -1261,7 +1259,7 @@ rollup-pluginutils@^2.8.1:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^1.12.3, rollup@^1.15.6:
+rollup@^1.12.3:
   version "1.16.2"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.16.2.tgz#959aeae4b06c8e540749bac442d6d37aefb9217d"
   integrity sha512-UAZxaQvH0klYZdF+90xv9nGb+m4p8jdoaow1VL5/RzDK/gN/4CjvaMmJNcOIv1/+gtzswKhAg/467mzF0sLpAg==
@@ -1322,7 +1320,7 @@ tslib@^1.10.0, tslib@^1.9.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
-typescript@^3.4.5, typescript@^3.5.2:
+typescript@^3.4.5:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
   integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
