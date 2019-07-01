@@ -1,5 +1,4 @@
 import ts from "@wessberg/rollup-plugin-ts";
-import typescript from "typescript";
 import multiEntry from "rollup-plugin-multi-entry";
 import packageJson from "./package.json";
 
@@ -15,7 +14,7 @@ export default {
     sourcemap: true,
   }],
   plugins: [
-    ts({ typescript }),
+    ts({ transpiler: "babel" }),
     multiEntry(),
   ]
 };
